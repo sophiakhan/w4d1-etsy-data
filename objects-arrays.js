@@ -102,13 +102,13 @@ console.log(songTitles);
 //     // console.log(movieTitle);
 // }
 
-// movies.forEach(function(movie) {
-//     console.log(movie);
-//     console.log(movie.title);
-//     console.log(movie.year);
-// });
+movies.forEach(function(movie) {
+    console.log(movie);
+    console.log(movie.title);
+    console.log(movie.year);
+});
 
-// movies.forEach(logMovie);
+movies.forEach(logMovie);
 
 // function logMovie(movie) {
 //     console.log(movie);

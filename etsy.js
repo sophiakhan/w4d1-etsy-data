@@ -25,10 +25,12 @@ console.log('The average price is' + ' ' + '$' + Math.round((total / items.lengt
 
 // 2. An array of items that cost between $14.00 and $18.00 USD
 var priceArray = items.filter(function(item) {
-    return (item.price >= 14.00 && item.price <= 18.00);
+    return (item.price >= 14.00 && item.price <= 18.00 && item.currency_code === "USD");
 });
 
-console.log(priceArray); 
+priceArray.forEach(function(item) {
+    console.log(item.title); 
+    })
 
 
 // 3. Find the item with a "GBP" currency code and print its name and price
@@ -36,7 +38,9 @@ var gbpCode = items.filter(function(item) {
     return (item.currency_code === "GBP");
 });
 
-console.log(gbpCode);
+gbpCode.forEach(function(item) {
+    console.log(item.title + ' costs ' + item.price); 
+    })
 
 
 // 4. Show how to find which items are made of wood
@@ -45,7 +49,9 @@ var woodMaterial = items.filter(function(item) {
     return item.description.includes(searchTerm);
 });
 
-console.log(woodMaterial);
+woodMaterial.forEach(function(item) {
+    console.log(item.title); 
+    })
 
 
 // 5. Find which items are made of eight or more materials
@@ -53,7 +59,10 @@ var eightOrMoreMaterials = items.filter(function(item) {
     return(item.materials.length >= [8]);
 });
 
-console.log(eightOrMoreMaterials);
+eightOrMoreMaterials.forEach(function(item) {
+    console.log(item.title + item.materials); 
+    })
+
 
 
 // 6. calculate how many items were made by their sellers
@@ -63,3 +72,5 @@ var totalSold = items.filter(function(item) {
 }).length;
 
 console.log(totalSold + ' ' + 'were made by their sellers');
+
+// use forEach to target the title in each problem before console.logging. 
