@@ -149,32 +149,32 @@ console.log(songTitles);
 
 // console.log(movieTitles);
 
-var movies = [
-    {title: 'Pulp Fiction', year: 1996},
-    {title: 'Frozen', year: 2014},
-    {title: 'Ex Machina', year: 2015},
-    {title: 'The Goonies', year: 1986}
-];
+// var movies = [
+//     {title: 'Pulp Fiction', year: 1996},
+//     {title: 'Frozen', year: 2014},
+//     {title: 'Ex Machina', year: 2015},
+//     {title: 'The Goonies', year: 1986}
+// ];
 
-var movieYears = getMovieYears(movies);
+// var movieYears = getMovieYears(movies);
 
-function getMovieYears(listOfMovies) {
-    return listOfMovies.map(function(movie) {
-        return {
-            movieTitle: movie.title.toUpperCase(),
-            movieYear: movie.year
-        };
-    });
-}
+// function getMovieYears(listOfMovies) {
+//     return listOfMovies.map(function(movie) {
+//         return {
+//             movieTitle: movie.title.toUpperCase(),
+//             movieYear: movie.year
+//         };
+//     });
+// }
 
-console.log(movieYears);
+// console.log(movieYears);
 
 // var names = ['Bart', 'Hemor', 'Morty'];
 // var searchTerm = 'o';
 
-var matches = names.filter(function(name) {
-    return name.toLowerCase().includes(searchTerm.toLowerCase());
-    // return name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1;
-});
+// var matches = names.filter(function(name) {
+//     return name.toLowerCase().includes(searchTerm.toLowerCase());
+//     // return name.toLowerCase().indexOf(searchTerm.toLowerCase()) !== -1;
+// });
 
-console.log(matches);
+// console.log(matches);

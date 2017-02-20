@@ -45,3 +45,15 @@ var woodMaterial = items.filter(function(item) {
 console.log(woodMaterial);
 
 // 5. Find which items are made of eight or more materials
+var eightOrMoreMaterials = items.filter(function(item) {
+    return(item.materials.length >= [8]);
+});
+
+console.log(eightOrMoreMaterials);
+
+// 6. calculate how many items were made by their sellers
+var totalSold = items.filter(function(item) {
+    return item.listing_id;
+}).length;
+
+console.log(totalSold + ' ' + 'were made by their sellers');
